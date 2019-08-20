@@ -16,6 +16,8 @@ class Song < ActiveRecord::Base
     else
       drake = Artist.find_by(name: "Drake")
     end
+    
+    self.artist = drake
 
   end
   
